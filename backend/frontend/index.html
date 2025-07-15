@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌟 Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="container">
+    <h1 class="main-title">🌟 Task Manager</h1>
+    <form id="taskForm">
+      <label for="title">Title</label>
+      <input type="text" id="title" placeholder="Enter Title" required />
+      <label for="description">Description</label>
+      <textarea id="description" placeholder="Description"></textarea>
+      <label for="status">Status</label>
+      <select id="status">
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="done">Done</option>
+      </select>
+      <button type="submit">➕ Add Task</button>
+    </form>
+    <div id="tasks"></div>
+  </div>
+
+  <!-- Chatbot Elements -->
+  <button id="chatbot-toggle">💬</button>
+  <div id="chatbot-box">
+    <div id="chat-messages"></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type here..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
